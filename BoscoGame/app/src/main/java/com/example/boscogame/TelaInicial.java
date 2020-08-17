@@ -10,7 +10,7 @@ import android.widget.Button;
 public class TelaInicial extends AppCompatActivity{
 
     //Avatares
-    Button BIniciar, BInst, BCred;
+    Button Biniciar, Binst, Bcred;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,41 +18,40 @@ public class TelaInicial extends AppCompatActivity{
         setContentView(R.layout.activity_tela_inicial);
 
         //Associacoes
-        BIniciar=(Button)findViewById(R.id.BIniciar);
-        BInst=(Button)findViewById(R.id.BInst);
-        BCred=(Button)findViewById(R.id.BCred);
+        Biniciar =(Button)findViewById(R.id.BIniciar);
+        Binst=(Button)findViewById(R.id.BInst);
+        Bcred=(Button)findViewById(R.id.BCred);
 
         //Escutar
-        BIniciar.setOnClickListener(new View.OnClickListener() {
+        Biniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                BIniciarActivity();
+                BiniciarActivity();
             }
         });
-        BInst.setOnClickListener(new View.OnClickListener() {
+        Binst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                BInstActivity();
+                BinstActivity();
             }
         });
-        BCred.setOnClickListener(new View.OnClickListener() {
+        Bcred.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                BCredActivity();
+                BcredActivity();
             }
         });
     }
+    private void BiniciarActivity() {
+        startActivity(new Intent(TelaInicial.this, TelaJogo.class));
+    }
 
-    private void BCredActivity() {
+    private void BcredActivity() {
         startActivity(new Intent(TelaInicial.this, TelaCreditos.class));
     }
 
-    private void BInstActivity() {
+    private void BinstActivity() {
         startActivity(new Intent(TelaInicial.this, instruction.class));
-    }
-
-    private void BIniciarActivity() {
-        startActivity(new Intent(TelaInicial.this, TelaJogo.class));
     }
 }
 
