@@ -12,8 +12,9 @@
         android:id="@+id/BExit"
         android:layout_width="85dp"
         android:layout_height="125dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="230dp"
         android:drawableTop="@drawable/sairpersonalizado"
+        android:stateListAnimator="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.198"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,10 +24,13 @@
         android:id="@+id/BPlay"
         android:layout_width="85dp"
         android:layout_height="110dp"
-        android:layout_marginBottom="184dp"
+        android:layout_marginBottom="200dp"
+        android:stateListAnimator="@null"
         android:drawableTop="@drawable/play__personalizado_"
+        android:gravity="center_horizontal|top"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

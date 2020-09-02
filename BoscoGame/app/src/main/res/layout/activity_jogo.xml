@@ -8,27 +8,26 @@
 
     <ImageView
         android:id="@+id/ImgSV3"
-        android:layout_width="46dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toStartOf="@+id/ImgSV2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/coracao" />
 
     <ImageView
         android:id="@+id/ImgSV2"
-        android:layout_width="46dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginLeft="6dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
         app:layout_constraintEnd_toStartOf="@+id/ImgSV1"
         app:layout_constraintStart_toEndOf="@+id/ImgSV3"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,14 +35,30 @@
 
     <ImageView
         android:id="@+id/ImgSV1"
-        android:layout_width="46dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="27dp"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toEndOf="@+id/ImgSV2"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/coracao" />
+
+
+    <TextView
+        android:id="@+id/pontos"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/press"
+        android:gravity="center_horizontal"
+        android:textSize="23dp"
+        android:textColor="#000000"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="135dp"
+        android:text="000"
+        app:layout_constraintBottom_toTopOf="@+id/ImgSB1"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/Bpause"
@@ -57,81 +72,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/ImgSB9"
-        android:layout_width="92dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="115dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/buraco" />
-
-    <ImageView
-        android:id="@+id/ImgSB8"
-        android:layout_width="92dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="115dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ImgSB7"
-        app:layout_constraintStart_toEndOf="@+id/ImgSB9"
-        app:srcCompat="@drawable/buraco" />
-
-    <ImageView
-        android:id="@+id/ImgSB7"
+        android:id="@+id/ImgSB1"
         android:layout_width="92dp"
         android:layout_height="42dp"
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
-        android:layout_marginBottom="115dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgSB4"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/buraco" />
-
-    <ImageView
-        android:id="@+id/ImgSB6"
-        android:layout_width="92dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/buraco"
-        tools:layout_editor_absoluteY="460dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/ImgSB5"
-        android:layout_width="92dp"
-        android:layout_height="42dp"
-        app:layout_constraintEnd_toStartOf="@+id/ImgSB6"
-        app:layout_constraintHorizontal_bias="0.549"
-        app:layout_constraintStart_toEndOf="@+id/imgSB4"
-        app:srcCompat="@drawable/buraco"
-        tools:layout_editor_absoluteY="460dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imgSB4"
-        android:layout_width="92dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/buraco"
-        tools:layout_editor_absoluteY="460dp"
-        tools:ignore="MissingConstraints" />
-
-
-    <ImageView
-        android:id="@+id/ImgSB3"
-        android:layout_width="92dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/buraco"
-        tools:layout_editor_absoluteY="345dp"
-        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/ImgSB2"
@@ -141,21 +90,120 @@
         android:layout_marginLeft="38dp"
         android:layout_marginEnd="33dp"
         android:layout_marginRight="33dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/ImgSB5"
         app:layout_constraintEnd_toStartOf="@+id/ImgSB3"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/ImgSB1"
-        app:srcCompat="@drawable/buraco"
-        tools:layout_editor_absoluteY="345dp"
-        tools:ignore="MissingConstraints" />
+        app:srcCompat="@drawable/buraco" />
 
     <ImageView
-        android:id="@+id/ImgSB1"
+        android:id="@+id/ImgSB3"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/ImgSB6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/buraco" />
+
+    <ImageView
+        android:id="@+id/imgSB4"
         android:layout_width="92dp"
         android:layout_height="42dp"
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/ImgSB7"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/buraco"
-        tools:layout_editor_absoluteY="345dp"
-        tools:ignore="MissingConstraints" />
+        app:srcCompat="@drawable/buraco" />
+
+    <ImageView
+        android:id="@+id/ImgSB5"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/ImgSB8"
+        app:layout_constraintEnd_toStartOf="@+id/ImgSB6"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/imgSB4"
+        app:srcCompat="@drawable/buraco" />
+
+    <ImageView
+        android:id="@+id/ImgSB6"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/ImgSB9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/buraco" />
+
+    <ImageView
+        android:id="@+id/ImgSB7"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/ImgSB10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/buraco" />
+
+    <ImageView
+        android:id="@+id/ImgSB8"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/ImgSB11"
+        app:layout_constraintEnd_toStartOf="@+id/ImgSB7"
+        app:layout_constraintStart_toEndOf="@+id/ImgSB9"
+        app:srcCompat="@drawable/buraco" />
+
+    <ImageView
+        android:id="@+id/ImgSB9"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/ImgSB12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/buraco" />
+
+    <ImageView
+        android:id="@+id/ImgSB10"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/buraco" />
+
+    <ImageView
+        android:id="@+id/ImgSB11"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ImgSB10"
+        app:layout_constraintStart_toEndOf="@+id/ImgSB12"
+        app:srcCompat="@drawable/buraco" />
+
+    <ImageView
+        android:id="@+id/ImgSB12"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/buraco" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
