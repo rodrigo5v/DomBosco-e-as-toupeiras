@@ -16,7 +16,7 @@ public class instruction extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_instruction);
 
-        BVoltaTC=(Button)findViewById(R.id.BVoltTC);
+        BVoltaTC=(Button)findViewById(R.id.BVoltaTC);
 
         BVoltaTC.setOnClickListener(this);
     }

@@ -8,13 +8,13 @@
     tools:context=".TelaCreditos">
 
     <Button
-        android:id="@+id/BVoltTC"
+        android:id="@+id/BVoltaTC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="#343A40"
-        android:fontFamily="casual"
+        android:fontFamily="@font/press"
         android:text="Voltar"
         android:textStyle="bold"
         android:textColor="#ffffff"

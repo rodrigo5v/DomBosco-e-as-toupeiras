@@ -10,21 +10,27 @@
 
     <Button
         android:id="@+id/BExit"
-        android:layout_width="109dp"
-        android:layout_height="126dp"
-        android:layout_marginTop="192dp"
-        android:drawableBottom="@drawable/sairpersonalizado"
+        android:layout_width="85dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="230dp"
+        android:drawableTop="@drawable/sairpersonalizado"
+        android:stateListAnimator="@null"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/BPlay"
-        android:layout_width="111dp"
-        android:layout_height="123dp"
-        android:layout_marginBottom="192dp"
-        android:drawableBottom="@drawable/play__personalizado_"
+        android:layout_width="85dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="200dp"
+        android:stateListAnimator="@null"
+        android:drawableTop="@drawable/play__personalizado_"
+        android:gravity="center_horizontal|top"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
